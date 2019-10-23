@@ -32,11 +32,10 @@ public class Magpie2
     {
         String response = "";
         //Activity 2, #3
-        if (statement.isBlank())
+        if (statement.trim().length() < 1)
         {
             response = "Say something, please.";
-        }
-        if (statement.indexOf("no") >= 0)
+        } else if (statement.indexOf("no") >= 0)
         {
             response = "Why so negative?";
         }
