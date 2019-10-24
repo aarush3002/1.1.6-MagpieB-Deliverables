@@ -54,26 +54,26 @@ public class Magpie2
             response = "Tell me more about your pets.";
         }
         //Activity 2, #2
-        else if (statement.indexOf("Mr.") >= 0)
+        else if (findKeyword(statement ,"Mr.", 0) >= 0)
         {
             response = "He sounds like a good teacher.";
         }
-        else if (statement.indexOf("Mrs.") >= 0
-                || statement.indexOf("Ms.") >= 0)
+        else if (findKeyword(statement ,"Mrs.", 0) >= 0
+                || findKeyword(statement ,"Ms.", 0) >= 0)
         {
             response = "She sounds like a good teacher.";
         }
         //Activity 2, #5
-        else if (statement.indexOf("Hello") >= 0
-                || statement.indexOf("Hi") >= 0)
+        else if (findKeyword(statement ,"Hello", 0) >= 0
+                || findKeyword(statement ,"Hi", 0) >= 0)
         {
             response = "Hi! How are you doing?";
         }
-        else if (statement.indexOf("coding") >= 0)
+        else if (findKeyword(statement ,"coding", 0) >= 0)
         {
-            response = "Cool! I like coding too.";
+            response = "Cool! I like coding";
         }
-        else if (statement.indexOf("school") >= 0)
+        else if (findKeyword(statement ,"school", 0) >= 0)
         {
             response = "Stay in school, kids!";
         }
